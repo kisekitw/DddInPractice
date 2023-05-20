@@ -47,7 +47,7 @@ namespace DddInPractice.Logic
 
         public override int GetHashCode()
         {
-            return (GetRealType().ToString() + Id).GetHashCode();
+            return (GetType().ToString() + Id).GetHashCode();
         }
     }
 }
