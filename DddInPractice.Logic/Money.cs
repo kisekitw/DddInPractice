@@ -2,14 +2,41 @@
 {
     public sealed class Money : ValueObject<Money>
     {
-        public int FiveDollarCount { get; private set; }
-        public int OneCentCount { get; private set; }
-        public int OneDollarCount { get; private set; }
-        public int QuarterCount { get; private set; }
-        public int TenCentCount { get; private set; }
-        public int TwentyDollarCount { get; private set; }
-        public Money(int oneCentCount, int tenCentCount, int quarterCount, int oneDollarCount, int fiveDollarCount, int twentyDollarCount)
+        public int FiveDollarCount { get; }
+        public int OneCentCount { get; }
+        public int OneDollarCount { get;  }
+        public int QuarterCount { get; }
+        public int TenCentCount { get; }
+        public int TwentyDollarCount { get; }
+        public decimal Amount =>
+            OneCentCount * 0.01m +
+            TenCentCount * 0.10m +
+            QuarterCount * 0.25m +
+            OneDollarCount +
+            FiveDollarCount * 5 +
+            TwentyDollarCount * 20;
+
+        public Money(
+            int oneCentCount,
+            int tenCentCount,
+            int quarterCount,
+            int oneDollarCount,
+            int fiveDollarCount,
+            int twentyDollarCount)
         {
+            if (oneCentCount< 0)
+                throw new InvalidOperationException();
+            if (tenCentCount < 0)
+                throw new InvalidOperationException();
+            if (quarterCount < 0)
+                throw new InvalidOperationException();
+            if (oneDollarCount < 0)
+                throw new InvalidOperationException();
+            if (fiveDollarCount < 0)
+                throw new InvalidOperationException();
+            if (twentyDollarCount < 0)
+                throw new InvalidOperationException();
+
             OneCentCount = oneCentCount;
             TenCentCount = tenCentCount;
             QuarterCount = quarterCount;
