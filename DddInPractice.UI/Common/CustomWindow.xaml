@@ -4,8 +4,7 @@
         xmlns:common="clr-namespace:DddInPractice.UI.Common"
         Title="{Binding Path=Caption}" Height="650" Width="800"
         common:DialogCloser.DialogResult="{Binding Path=DialogResult}"
-        WindowStartupLocation="CenterOwner"
-        Icon="{StaticResource imgApplicationIcon}">
+        WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.Resources>
             <common:MainDataTemplateSelector x:Key="selector" />
