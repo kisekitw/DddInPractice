@@ -135,5 +135,11 @@
     <Resource Include="Images\Icon.png" />
     <Resource Include="Images\Soda.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DddInPractice.Logic\DddInPractice.Logic.csproj">
+      <Project>{d62f4910-e3f6-4151-9060-b51891f6dac6}</Project>
+      <Name>DddInPractice.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
