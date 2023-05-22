@@ -3,7 +3,7 @@ using FluentAssertions;
 
 namespace DddInPractice.Tests
 {
-    public class MoneySpec
+    public class MoneySpecs
     {
         [Fact]
         public void Sum_of_two_moneys_produce_correct_result()

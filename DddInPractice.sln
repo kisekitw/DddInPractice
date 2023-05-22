@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DddInPractice.Logic", "DddInPractice.Logic\DddInPractice.Logic.csproj", "{D62F4910-E3F6-4151-9060-B51891F6DAC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DddInPractice.Logic", "DddInPractice.Logic\DddInPractice.Logic.csproj", "{D62F4910-E3F6-4151-9060-B51891F6DAC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DddInPractice.Tests", "DddInPractice.Tests\DddInPractice.Tests.csproj", "{550E8AA3-B34F-41AB-97AC-D1B4C46F6D41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DddInPractice.Tests", "DddInPractice.Tests\DddInPractice.Tests.csproj", "{550E8AA3-B34F-41AB-97AC-D1B4C46F6D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DddInPractice.UI", "DddInPractice.UI\DddInPractice.UI.csproj", "{606A99F3-D51A-42CD-A941-9182C378162E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{550E8AA3-B34F-41AB-97AC-D1B4C46F6D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{550E8AA3-B34F-41AB-97AC-D1B4C46F6D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{550E8AA3-B34F-41AB-97AC-D1B4C46F6D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606A99F3-D51A-42CD-A941-9182C378162E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606A99F3-D51A-42CD-A941-9182C378162E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606A99F3-D51A-42CD-A941-9182C378162E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606A99F3-D51A-42CD-A941-9182C378162E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
